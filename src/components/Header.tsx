@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { AppBar, Container, Stack, Toolbar, Typography } from "@mui/material";
 import { QueryStats } from "@mui/icons-material";
 

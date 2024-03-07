@@ -1,6 +1,5 @@
-import * as React from "react";
-import Container from "@mui/material/Container";
-import { Stack } from "@mui/material";
+import React from "react";
+import { Stack, Container } from "@mui/material";
 import Footer from "src/components/Footer";
 import PriceList from "src/components/PriceList";
 import StockChart from "src/components/StockChart";
