@@ -9,6 +9,9 @@ import theme from "src/theme";
 export default function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="nb">
+      <head>
+        <title>Bergen Tech - Next.js Kurs</title>
+      </head>
       <body>
         <TurnOffDefaultPropsWarning />
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
