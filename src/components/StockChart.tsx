@@ -37,7 +37,7 @@ const StockChart: React.FC<{
         <XAxis dataKey="time" />
         <YAxis tickFormatter={(value) => formatCurrency(value)} />
         <Tooltip />
-        <Line type="monotone" dataKey="close" stroke="#8884d8" dot={true} />
+        <Line dataKey="close" />
       </LineChart>
     </ResponsiveContainer>
   );

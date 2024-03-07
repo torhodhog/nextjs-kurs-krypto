@@ -11,7 +11,8 @@ export default async function Crypto({
 }: {
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
-  const currentCurrency = (searchParams.currency || "BTC") as string;
+  const currentCurrency = (searchParams.currency || "DOGE") as string;
+
   const chartData = await fetchChartData(currentCurrency);
   const prices = await fetchPrices();
 
