@@ -24,7 +24,7 @@ const PriceList: React.FC<{
   return (
     <Paper elevation={3} sx={{ padding: 2 }}>
       <Typography variant="h6" sx={{ mb: 2 }}>
-        Kryptovaluta Priser
+        Kryptoer
       </Typography>
       <List>
         {currencies.map(({ symbol, name, icon }) => {

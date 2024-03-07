@@ -1,6 +1,5 @@
 import React from "react";
 import { AppBar, Container, Stack, Toolbar, Typography } from "@mui/material";
-import { QueryStats } from "@mui/icons-material";
 
 const Header: React.FC = () => {
   return (
@@ -8,12 +7,9 @@ const Header: React.FC = () => {
       <Toolbar>
         <Container maxWidth="lg">
           <Stack direction="row" spacing={2} alignItems="center">
-            <QueryStats />
+            {/* Her kan du sette inn et ikon for eksempel, https://mui.com/material-ui/material-icons/*/}
             <Typography variant="h6" noWrap>
-              <Typography component="span" variant="h6" color="#4f46e5">
-                Bergen Tech
-              </Typography>{" "}
-              Next.js Krypto Kurs
+              Mitt Krypto Dashboard
             </Typography>
           </Stack>
         </Container>

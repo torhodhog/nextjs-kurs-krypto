@@ -13,24 +13,6 @@ type ResourceCategory = {
 
 const resources: ResourceCategory[] = [
   {
-    title: "Bergen Tech",
-    links: [
-      { name: "Nettside", url: "https://bergen-tech.no" },
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/showcase/bergen-tech1",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/profile.php?id=61555338764797",
-      },
-      {
-        name: "GitHub",
-        url: "https://github.com/Bergen-Tech",
-      },
-    ],
-  },
-  {
     title: "Utviklingsverktøy",
     links: [
       { name: "React", url: "https://react.dev" },

@@ -11,22 +11,23 @@ const montserrat = Montserrat({
 
 const theme = createTheme({
   palette: {
-    primary: {
-      main: "#bdbdbd",
-      light: "#e0e0e0",
-    },
-    secondary: {
-      main: "#ffd700",
-      contrastText: "#ffffff",
-    },
-    background: {
-      default: "#f5f5f5",
-      paper: "#ffffff",
-    },
-    text: {
-      primary: "#333333",
-      secondary: "#555555",
-    },
+    // Dette formatet på farger heter hex color: https://www.google.com/search?q=color+picker
+    // primary: {
+    //   main: "#123123",
+    //   light: "#333",
+    // },
+    // secondary: {
+    //   main: "#eee",
+    //   light: "#000123",
+    // },
+    // background: {
+    //   default: "#333",
+    //   paper: "#ccc",
+    // },
+    // text: {
+    //   primary: "#fff",
+    //   secondary: "#ffffff",
+    // },
   },
   typography: {
     fontFamily: montserrat.style.fontFamily,

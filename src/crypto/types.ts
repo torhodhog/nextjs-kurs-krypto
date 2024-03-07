@@ -29,3 +29,9 @@ export interface CryptoDataResponse {
 export interface CryptoPrices {
   [symbol: string]: { USD: number };
 }
+
+export interface CryptoCurrency {
+  symbol: string;
+  name: string;
+  icon: JSX.Element;
+}

@@ -1,26 +1,7 @@
 import { Icon } from "@mui/material";
+import { CryptoCurrency } from "./types";
 
-export const currencies = [
-  {
-    symbol: "BTC",
-    name: "Bitcoin",
-    icon: <Icon component="img" src="/icons/btc.svg" alt="Bitcoin" />,
-  },
-  {
-    symbol: "ETH",
-    name: "Ethereum",
-    icon: <Icon component="img" src="/icons/eth.svg" alt="Ethereum" />,
-  },
-  {
-    symbol: "XRP",
-    name: "XRP",
-    icon: <Icon component="img" src="/icons/xrp.svg" alt="Ripple" />,
-  },
-  {
-    symbol: "LTC",
-    name: "Litecoin",
-    icon: <Icon component="img" src="/icons/ltc.svg" alt="Litecoin" />,
-  },
+export const currencies: CryptoCurrency[] = [
   {
     symbol: "DOGE",
     name: "Dogecoin",
