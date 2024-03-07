@@ -7,7 +7,7 @@ import {
   List,
   ListItemIcon,
   ListItemText,
-  ListItemButton,
+  ListItemButton
 } from "@mui/material";
 import { useChangeCurrency } from "src/hooks/useChangeCurrency";
 import { currencies } from "src/crypto/currencies";
@@ -26,6 +26,7 @@ const PriceList: React.FC<{
       <Typography variant="h6" sx={{ mb: 2 }}>
         Kryptoer
       </Typography>
+       
       <List>
         {currencies.map(({ symbol, name, icon }) => {
           const selected = currentCurrency === symbol;
@@ -43,6 +44,7 @@ const PriceList: React.FC<{
                 secondary={`$${prices[symbol]?.USD || "Laster..."}`}
               />
             </ListItemButton>
+            
           );
         })}
       </List>

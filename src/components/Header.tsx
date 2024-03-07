@@ -1,5 +1,6 @@
 import React from "react";
-import { AppBar, Container, Stack, Toolbar, Typography } from "@mui/material";
+import { AppBar, Button, Container, Stack, Toolbar, Typography } from "@mui/material";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const Header: React.FC = () => {
             <Typography variant="h6" noWrap>
               Mitt Krypto Dashboard
             </Typography>
+            
           </Stack>
         </Container>
       </Toolbar>
