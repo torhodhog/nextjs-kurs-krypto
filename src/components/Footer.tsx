@@ -49,6 +49,10 @@ const resources: ResourceCategory[] = [
         url: "https://github.com/Bergen-Tech/nextjs-kurs-krypto",
       },
       { name: "GitHub Desktop", url: "https://desktop.github.com/" },
+      {
+        name: "Full Versjon",
+        url: "https://nextjs-kurs-krypto-full-version.vercel.app",
+      },
     ],
   },
   {
