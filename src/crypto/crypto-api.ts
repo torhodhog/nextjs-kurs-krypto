@@ -7,10 +7,12 @@ const apiKey = process.env.CRYPTOCOMPARE_API_KEY;
 
 const baseUrl = "https://min-api.cryptocompare.com";
 
-// Hvis du ønsker å lese mer om cachingen: https://nextjs.org/docs/app/api-reference/functions/fetch
+// Info om cryptocompare: https://min-api.cryptocompare.com/documentation
 
 export const fetchPrices = async () => {
   const fsyms = currencies.map((currency) => currency.symbol).join(",");
+
+  // Info om dette endepunktet: https://min-api.cryptocompare.com/documentation?key=Price&cat=multipleSymbolsPriceEndpoint
   const url = `${baseUrl}/data/pricemulti?fsyms=${fsyms}&tsyms=USD`;
 
   const response = await fetch(url, {
@@ -30,6 +32,7 @@ export const fetchPrices = async () => {
 export const fetchChartData = async (
   currency: string
 ): Promise<CryptoTimeSeries> => {
+  // Info om dette endepunktet: https://min-api.cryptocompare.com/documentation?key=Historical&cat=dataHistoday
   const url = `${baseUrl}/data/v2/histoday?fsym=${currency}&tsym=USD&limit=30&e=CCCAGG`;
 
   const response = await fetch(url, {
@@ -45,3 +48,5 @@ export const fetchChartData = async (
 
   return data.Data;
 };
+
+// Hvis du ønsker å lese mer om cachingen: https://nextjs.org/docs/app/api-reference/functions/fetch
