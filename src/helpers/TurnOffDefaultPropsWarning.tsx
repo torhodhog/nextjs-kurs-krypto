@@ -2,6 +2,7 @@
 
 // Denne er lagt til for å fjerne en warning fra recharts biblioteket
 // Kilde: https://github.com/recharts/recharts/issues/3615#issuecomment-1971238184
+
 export const TurnOffDefaultPropsWarning = () => {
   // Override console.error
   // This is a hack to suppress the warning about missing defaultProps in the recharts library

@@ -7,6 +7,8 @@ const apiKey = process.env.CRYPTOCOMPARE_API_KEY;
 
 const baseUrl = "https://min-api.cryptocompare.com";
 
+// Hvis du ønsker å lese mer om cachingen: https://nextjs.org/docs/app/api-reference/functions/fetch
+
 export const fetchPrices = async () => {
   const fsyms = currencies.map((currency) => currency.symbol).join(",");
   const url = `${baseUrl}/data/pricemulti?fsyms=${fsyms}&tsyms=USD`;
